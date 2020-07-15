@@ -24,7 +24,7 @@ var doctype = /^<!DOCTYPE [^>]+>/i;
 var comment = /^<!--/;
 var conditionalComment = /^<!\[/;
 
-export default {
+export {
   singleAttrIdentifier,
   singleAttrAssign,
   singleAttrValues,

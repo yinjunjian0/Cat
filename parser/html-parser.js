@@ -4,7 +4,6 @@ export function parse(template) {
   var stack = []; //插入栈
   var startStack = []; //开始标签栈
   var endStack = [];  //结束标签栈
-  //console.log(template);
   parseHTML(template, {
     start: function start(targetName, attrs, unary, start, end, type, text) {//标签名 ，attrs，是否结束标签，文本开始位置，文本结束位置，type，文本，
       var element = {   //我们想要的对象
